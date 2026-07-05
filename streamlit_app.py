@@ -35,7 +35,7 @@ if ingredients_list :
         ingredients_string+=fruit_chosen+' '
 
     st.write(ingredients_string)    
-    smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon](https://my.smoothiefroot.com/api/fruit/watermelon)")
+    smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
     st.text(smoothiefroot_response.json())   
   
     my_insert_stmt = """ insert into smoothies.public.orders(ingredients,name_on_order)
